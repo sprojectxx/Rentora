@@ -2,7 +2,7 @@ import React from "react";
 import {
     Wifi, Snowflake, Shirt, Utensils, Car, Dumbbell, BookOpen,
     Shield, Sparkles, Zap, Droplet, Tv, Video, Refrigerator, 
-    ChefHat, ArrowUpDown, Bath, Broom, Lock, Droplets
+    ChefHat, ArrowUpDown, Bath, Brush, Lock, Droplets
 } from "lucide-react";
 
 export const AMENITY_META = {
@@ -23,7 +23,7 @@ export const AMENITY_META = {
     kitchen: { label: "Self-cooking kitchen", icon: ChefHat },
     lift: { label: "Lift/Elevator", icon: ArrowUpDown },
     attached_bathroom: { label: "Attached washroom", icon: Bath },
-    daily_cleaning: { label: "Daily cleaning", icon: Broom },
+    daily_cleaning: { label: "Daily cleaning", icon: Brush },
     wardrobe: { label: "Personal locker", icon: Lock },
     ro_water: { label: "RO Water", icon: Droplets },
 };

@@ -57,8 +57,8 @@ export default function SearchFilters({ filters, setFilters, onReset }) {
                     <SelectContent>
                         <SelectItem value="any">Any sharing</SelectItem>
                         <SelectItem value="single">Single</SelectItem>
-                        <SelectItem value="shared_2">Double sharing</SelectItem>
-                        <SelectItem value="shared_3">Triple sharing</SelectItem>
+                        <SelectItem value="shared_2">2-sharing</SelectItem>
+                        <SelectItem value="shared_3">3-sharing</SelectItem>
                         <SelectItem value="shared_4">4-sharing</SelectItem>
                         <SelectItem value="shared_5">5-sharing</SelectItem>
                         <SelectItem value="shared_6">6-sharing</SelectItem>
