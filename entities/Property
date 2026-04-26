@@ -1,0 +1,118 @@
+{
+    "name": "Property",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Property title"
+        },
+        "description": {
+            "type": "string",
+            "description": "Detailed description"
+        },
+        "property_type": {
+            "type": "string",
+            "enum": [
+                "room",
+                "pg",
+                "hostel",
+                "apartment"
+            ],
+            "default": "room"
+        },
+        "price": {
+            "type": "number",
+            "description": "Monthly rent"
+        },
+        "deposit": {
+            "type": "number",
+            "description": "Security deposit"
+        },
+        "address": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "nearby_college": {
+            "type": "string",
+            "description": "Nearest college/university"
+        },
+        "distance_km": {
+            "type": "number",
+            "description": "Distance from college in km"
+        },
+        "latitude": {
+            "type": "number"
+        },
+        "longitude": {
+            "type": "number"
+        },
+        "amenities": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "wifi",
+                    "ac",
+                    "laundry",
+                    "meals",
+                    "parking",
+                    "gym",
+                    "study_room",
+                    "security",
+                    "housekeeping",
+                    "power_backup",
+                    "hot_water",
+                    "tv"
+                ]
+            }
+        },
+        "room_type": {
+            "type": "string",
+            "enum": [
+                "single",
+                "shared_2",
+                "shared_3",
+                "dormitory"
+            ],
+            "default": "single"
+        },
+        "gender_preference": {
+            "type": "string",
+            "enum": [
+                "any",
+                "male",
+                "female"
+            ],
+            "default": "any"
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Image URLs"
+        },
+        "owner_name": {
+            "type": "string"
+        },
+        "owner_phone": {
+            "type": "string"
+        },
+        "is_available": {
+            "type": "boolean",
+            "default": true
+        },
+        "is_verified": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "title",
+        "price",
+        "address",
+        "property_type"
+    ]
+}
