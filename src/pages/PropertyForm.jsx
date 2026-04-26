@@ -278,6 +278,9 @@ function PropertyFormInner() {
                                     <SelectItem value="single">Single</SelectItem>
                                     <SelectItem value="shared_2">Shared (2)</SelectItem>
                                     <SelectItem value="shared_3">Shared (3)</SelectItem>
+                                    <SelectItem value="shared_4">Shared (4)</SelectItem>
+                                    <SelectItem value="shared_5">Shared (5)</SelectItem>
+                                    <SelectItem value="shared_6">Shared (6)</SelectItem>
                                     <SelectItem value="dormitory">Dormitory</SelectItem>
                                 </SelectContent>
                             </Select>

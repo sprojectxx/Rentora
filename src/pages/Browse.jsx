@@ -14,6 +14,7 @@ import { useUserLocation, getDistanceKm } from "@/hooks/useUserLocation";
 const DEFAULT_FILTERS = {
     query: "",
     property_type: "any",
+    room_type: "any",
     maxPrice: 20000,
     maxDistance: 20,
     amenities: [],
@@ -81,6 +82,7 @@ export default function Browse() {
         return properties.filter((p) => {
             if (p.is_available === false) return false;
             if (filters.property_type !== "any" && p.property_type !== filters.property_type) return false;
+            if (filters.room_type && filters.room_type !== "any" && p.room_type !== filters.room_type) return false;
             
             const pPrice = Number(p.price);
             if (filters.maxPrice && !isNaN(pPrice) && pPrice > filters.maxPrice) return false;

@@ -59,9 +59,7 @@ export default function Navbar() {
         >
             <div className="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2 group">
-                    <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center shadow-sm group-hover:rotate-6 transition-transform">
-                        <span className="text-primary-foreground font-display font-bold text-lg">R</span>
-                    </div>
+                    <img src="/logo.png" alt="Rentora" className="w-8 h-8 rounded-xl shadow-sm group-hover:rotate-6 transition-transform object-cover" />
                     <span className="font-display text-2xl font-semibold tracking-tight">Rentora</span>
                 </Link>
 

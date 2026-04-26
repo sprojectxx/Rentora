@@ -1,7 +1,8 @@
 import React from "react";
 import {
     Wifi, Snowflake, Shirt, Utensils, Car, Dumbbell, BookOpen,
-    Shield, Sparkles, Zap, Droplet, Tv,
+    Shield, Sparkles, Zap, Droplet, Tv, Video, Refrigerator, 
+    ChefHat, ArrowUpDown, Bath, Broom, Lock, Droplets
 } from "lucide-react";
 
 export const AMENITY_META = {
@@ -17,6 +18,14 @@ export const AMENITY_META = {
     power_backup: { label: "Power backup", icon: Zap },
     hot_water: { label: "Hot water", icon: Droplet },
     tv: { label: "TV", icon: Tv },
+    cctv: { label: "CCTV", icon: Video },
+    fridge: { label: "Refrigerator", icon: Refrigerator },
+    kitchen: { label: "Self-cooking kitchen", icon: ChefHat },
+    lift: { label: "Lift/Elevator", icon: ArrowUpDown },
+    attached_bathroom: { label: "Attached washroom", icon: Bath },
+    daily_cleaning: { label: "Daily cleaning", icon: Broom },
+    wardrobe: { label: "Personal locker", icon: Lock },
+    ro_water: { label: "RO Water", icon: Droplets },
 };
 
 export default function AmenityIcon({ amenity, className = "" }) {

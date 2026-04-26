@@ -48,15 +48,35 @@ export default function SearchFilters({ filters, setFilters, onReset }) {
             </div>
 
             <div>
+                <Label className="text-xs uppercase tracking-wider text-muted-foreground mb-2 block">Sharing</Label>
+                <Select
+                    value={filters.room_type || "any"}
+                    onValueChange={(v) => setFilters({ ...filters, room_type: v })}
+                >
+                    <SelectTrigger className="rounded-full"><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                        <SelectItem value="any">Any sharing</SelectItem>
+                        <SelectItem value="single">Single</SelectItem>
+                        <SelectItem value="shared_2">Double sharing</SelectItem>
+                        <SelectItem value="shared_3">Triple sharing</SelectItem>
+                        <SelectItem value="shared_4">4-sharing</SelectItem>
+                        <SelectItem value="shared_5">5-sharing</SelectItem>
+                        <SelectItem value="shared_6">6-sharing</SelectItem>
+                        <SelectItem value="dormitory">Dormitory</SelectItem>
+                    </SelectContent>
+                </Select>
+            </div>
+
+            <div>
                 <div className="flex items-center justify-between mb-2">
                     <Label className="text-xs uppercase tracking-wider text-muted-foreground">Max price</Label>
                     <span className="text-sm font-medium">₹{(filters.maxPrice ?? 20000).toLocaleString()}</span>
                 </div>
                 <Slider
-                    min={2000}
-                    max={50000}
+                    min={1000}
+                    max={20000}
                     step={500}
-                    value={[filters.maxPrice ?? 20000]}
+                    value={[Math.min(filters.maxPrice ?? 20000, 20000)]}
                     onValueChange={([v]) => setFilters({ ...filters, maxPrice: v })}
                 />
             </div>
