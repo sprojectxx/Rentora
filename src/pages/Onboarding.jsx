@@ -127,7 +127,7 @@ export default function Onboarding() {
 
                     <div>
                         <Label>Phone</Label>
-                        <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+91 98765 43210" className="mt-1.5" required />
+                        <Input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="10 - digit phone number" className="mt-1.5" required /> 
                     </div>
 
                     <div>
