@@ -120,7 +120,7 @@ export default function Login() {
                 <Input
                     autoFocus
                     type={mode === "email" ? "email" : "tel"}
-                    placeholder={mode === "email" ? "arjun@example.com" : "+91 98765 43210"}
+                    placeholder={mode === "email" ? "arjun@example.com" : "10 - digit phone number"}
                     value={mode === "email" ? email : phone}
                     onChange={(e) => mode === "email" ? setEmail(e.target.value) : setPhone(e.target.value)}
                     required
